@@ -1,0 +1,93 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eslabon.laboratoryexcercise2.MainActivity"
+    android:background="#000">
+
+    <TextView
+        android:id="@+id/usernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Username: "
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Password: "
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16dp"
+        android:layout_below="@+id/usernameLabel"/>
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/usernameLabel"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="15dp" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/usernameLabel"
+        android:ems="10"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/usernameInput" />
+
+    <Button
+        android:id="@+id/sharedPrefBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Shared Preferences"
+        android:layout_below="@+id/passwordLabel"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="sharedPreferences"
+        android:background="@drawable/mycorner"/>
+
+    <Button
+        android:id="@+id/intStorBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Internal Storage"
+        android:layout_below="@+id/sharedPrefBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="internalStorage"
+        android:background="@drawable/mycorner"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Next"
+        android:layout_below="@+id/intStorBtn"
+        android:layout_centerHorizontal="true"
+        android:onClick="toSecondActivity"
+        android:background="@drawable/mycorner"/>
+
+</RelativeLayout>

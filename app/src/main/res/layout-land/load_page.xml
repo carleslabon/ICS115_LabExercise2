@@ -1,0 +1,70 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C58917">
+
+    <Button
+        android:id="@+id/loadSharedBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Load Shared Preferences"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="loadSharedPreferences"
+        android:background="@drawable/mycorner"/>
+
+    <Button
+        android:id="@+id/loadIntStorBtn"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Load Internal Storage"
+        android:layout_below="@+id/loadSharedBtn"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="loadInternalStorage"
+        android:background="@drawable/mycorner"/>
+
+    <TextView
+        android:id="@+id/textDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loadIntStorBtn"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Clear"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:onClick="clearText"
+        android:background="@drawable/mycorner"/>
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:onClick="goToMainMenu"
+        android:background="@drawable/mycorner"/>
+
+</RelativeLayout>
